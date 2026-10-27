@@ -37,3 +37,10 @@
 
 ## Senere, ikke implementert
 Metallurgi, jordbruk, industri, energisystemer, flere samfunn og romfart. Avklar epokesprang og omfang før videre bygging. Endelig motor, distribusjon og publisering velges etter ytelses- og brukertest.
+
+## Grafikkpass 0.3 — implementert
+- [x] 48 × 48 kart med bevart startområde
+- [x] Klikkbart minikart, større zoomområde, synlighetsfiltrering
+- [x] Terrengvariasjon, treskygger, takdetaljer, gåanimasjon, bållys
+- [x] Tester for kartgrenser, langdistanseordre og lagring
+- [ ] Visuell gjennomgang og ytelsestest i nettleser

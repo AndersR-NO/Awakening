@@ -1,7 +1,7 @@
 # Awakening
 A strategy survival game about how everything is connected.
 
-## Spill prototype 0.2
+## Spill prototype 0.3
 Last ned `index.html` og åpne i en moderne nettleser. Ingen server, installasjon eller eksterne ressurser trengs.
 
 Menneskeheten må utvikle seg fra steinalderen til en sivilisasjon som kan forlate jorda før planeten blir ubeboelig. Årsaken og den historiske tidshorisonten er foreløpig åpne designvalg. Ingen utenomjordisk hovedperson eller hjemreise til Alpha Centauri.
@@ -27,3 +27,8 @@ Ett døgn er 120 simulerte sekunder; en sesong varer tre døgn. Felles helsetils
 `node tests/simulation.cjs` tester idle-start, ordre, reisetid, bygging, kostnader, gjennomførbart oppdrag, tap og lagringsformat uten avhengigheter.
 
 Nettlesertest: installer Playwright og Chromium, kjør `node tests/browser.cjs`. Nettlesertesten er oppdatert, men kunne ikke kjøres i utviklingsmiljøet fordi Chromium ikke var tilgjengelig. Visuell QA gjenstår.
+
+## Grafikk og verden i 0.3
+Kartet er utvidet fra 18 × 18 til 48 × 48 ruter (2304 ruter). Klikk minikartet for å flytte kameraet; Sentrer går tilbake til startområdet. Større zoomområde, skoger, innsjø, steinområder og ekstra bærressurser. Startområdet og målene er bevart. Terrengtekstur, treskygger, takdetaljer, gåanimasjon og nattlig bållys er tegnet i Canvas uten eksterne bilder. Bare synlig terreng tegnes i hovedkartet.
+
+Dette er en forbedret stilisert prototype, ikke endelig spillgrafikk. Tidligere v2-lagringer bruker fortsatt samme startområde. Visuell QA gjenstår.
