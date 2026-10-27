@@ -1,25 +1,24 @@
 # Awakening — konseptgrunnlag
 
-## Bekreftet av kreativ leder
-Strategispill sett ovenfra. En utenomjordisk, menneskelignende hovedperson settes ned fra et romskip på jorda, nær et tidlig menneskesamfunn. Oppdraget er å utvikle sivilisasjonen. Det langsiktige målet er å undersøke hvor langt man kan komme, og om hjemreisen til Alpha Centauri er mulig.
+## Bekreftet retning
+Strategispill sett ovenfra med tradisjonell RTS-styring. Menneskelige innbyggere starter ledige, velges enkeltvis eller i grupper og får ordre gjennom pek-og-klikk: flytting, ressursinnsamling og bygging.
 
-Spilleren setter innbyggerne i arbeid. Vann, mat, varme, klær, husly og sikkerhet mot rovdyr og andre stammer må ivaretas. Ressurser og grunnstoffer kombineres for å skape innovasjon. Forskning gir blant annet mer effektiv ressursutvinning. Dager, netter og årstider veksler; arbeidet komprimeres for spillbarhet.
+Spilleren leder en sivilisasjon fra steinalderen mot romfart. På sikt blir jorda ubeboelig, og menneskeheten må kunne forlate planeten. Årsak, tidsfrist og reisemål er ikke fastsatt. Den tidligere utenomjordiske hovedpersonen og hjemreisen til Alpha Centauri er fjernet fra konseptet.
 
-Åpningen begynner med Big Bang og følger universets utvikling i rask tid. Reisen fortsetter mot Melkeveien, solsystemet og jorda før landingen. Higgsfield er ønsket verktøy for film; filmen må følge spillets visuelle stil.
+Vann, mat, varme, klær, husly og sikkerhet mot rovdyr og andre stammer skal ivaretas. Ressurser og grunnstoffer kombineres for innovasjon. Forskning effektiviserer blant annet ressursutvinning. Dag/natt og årstider påvirker spillet; tiden komprimeres for spillbarhet.
 
-## Arbeidshypoteser for første prototype
-- Skrått ovenfraperspektiv; varm, dempet jordpalett med gyllent UI og grønn natur.
-- Seks innbyggere og en synlig leder. Arbeidsfordeling styres i et sidepanel.
-- Spillet skal belønne forberedelse, prioritering og eksperimentering.
-- Læring skal etter hvert komme gjennom produksjonskjeder og konsekvenser, med valgfrie forklaringer.
-- Nettleser først, offline prototype uten avhengigheter. Endelig teknologi velges etter praktisk evaluering.
+Åpningen følger Big Bang, universets utvikling, Melkeveien, solsystemet og jorda. Overgangen til bosetningen skal nå skje uten romskip eller utenomjordisk ankomst. Higgsfield er ønsket filmverktøy. Film og spill må ha konsekvent stil.
 
-## Åpne kreative spørsmål
-- Hvorfor kan hovedpersonen ikke bruke romskipet til hjemreisen? Hvor mye kunnskap er bevart?
-- Hvordan lever hovedpersonen gjennom epokene: lang levetid, dvale eller generasjoner?
-- Målgruppe, ønsket vanskelighet, realisme og omfang.
-- Hvordan skal individenes selvstendighet, ønsker og forhold til lederen fungere?
-- Tidslinje, historiske sprang, befolkningsvekst og valgfri konflikt.
+## Prototype 0.2
+Seks styrbare innbyggere, skrått ovenfraperspektiv, manuell bygging og enkel ruteberegning. Første mål: Overlev tre døgn, bygg et bål og to hytter, og forsk frem bedre steinredskaper. Dette er uendret fra 0.1.
+
+Nettleser er ønsket distribusjon; Canvas 2D er et prototypevalg. Endelig motor og visuell retning er ikke bestemt. Dagens seks personer og korte sesonger er spilltestverdier, ikke endelige historiske modeller.
+
+## Åpne designvalg
+- Hvorfor og når blir jorda ubeboelig? Hvordan oppdages dette gjennom spillet?
+- Skal det være en faktisk nedtelling eller et langsiktig narrativt mål?
+- Hvordan håndteres generasjoner, epoker, befolkning og historiske tidshopp?
+- Målgruppe, vanskelighet, realisme, samfunnsorganisering og konfliktnivå.
 
 ## Faglig kvalitet
-Romfareren og påvirkningen på menneskelig utvikling er et fiktivt premiss, ikke en historisk forklaring. Ressurser, forbindelser og grunnstoffer må skilles. Big Bang bør ikke fremstilles som en vanlig eksplosjon i et eksisterende tomrom. Faglige forklaringer skal kildekontrolleres før de legges inn i spillerens kunnskapsbok. Dette dokumentet er et designgrunnlag, ikke en vitenskapelig kilde.
+Skill mellom vitenskapelig kunnskap, komprimerte spillmodeller og fiktive hendelser. Ikke presenter ubeboelighet som en bestemt prognose før årsak og tidshorisont er definert og faktasjekket. Skill ressurser, forbindelser og grunnstoffer. Kildekontroller naturvitenskapelige forklaringer før de inkluderes i kunnskapsboken. Big Bang-sekvensen skal faglig gjennomgås før produksjon.

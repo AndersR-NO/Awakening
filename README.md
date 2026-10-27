@@ -1,23 +1,29 @@
 # Awakening
 A strategy survival game about how everything is connected.
 
-## Spill prototype 0.1
-Last ned `index.html` og åpne filen i en moderne nettleser. Ingen installasjon, server, eksterne ressurser eller byggetrinn er nødvendig. Dette er en lokal prototype, ikke en publisert spilltjeneste.
+## Spill prototype 0.2
+Last ned `index.html` og åpne i en moderne nettleser. Ingen server, installasjon eller eksterne ressurser trengs.
 
-Fordel seks innbyggere mellom vann, mat, ved, stein og forskning. Frigjør en arbeider med minus før du legger vedkommende til en annen oppgave. Velg et bygg og klikk på ledig gress. Dra kartet for å panorere og rull for å zoome. Mellomrom pauser, Escape avbryter bygging. Lagre/last inn bruker nettleserens lokale lagring; tilgjengelighet ved file:// kan variere mellom nettlesere.
+Menneskeheten må utvikle seg fra steinalderen til en sivilisasjon som kan forlate jorda før planeten blir ubeboelig. Årsaken og den historiske tidshorisonten er foreløpig åpne designvalg. Ingen utenomjordisk hovedperson eller hjemreise til Alpha Centauri.
 
-**Mål:** Overlev tre døgn, bygg et bål og to hytter, og utvikle bedre steinredskaper. Etterpå kan du fortsette i sandkassen.
+**Første mål er uendret:** Overlev tre døgn, bygg bål og to hytter, og utvikle bedre steinredskaper.
 
-## Status og avgrensning
-- Skrått ovenfraperspektiv i Canvas 2D, med midlertidig kodebasert grafikk.
-- Ressurser, arbeidsfordeling, byggekostnader, forskning, felles helsetilstand, dag/natt og fire sesonger.
-- Ett døgn = 120 simulerte sekunder. Sesong skifter etter tre døgn. Dette er spillbalanse, ikke en historisk tidsmodell.
-- Rovdyr er foreløpig en hendelse med konsekvens, ikke bevegelige fiender.
-- Innbyggernes bevegelser er illustrasjoner; produksjon følger arbeidsfordelingen, ikke faktisk transport eller veifinning.
-- Bygg fullføres straks. Ingen klær, befolkningsvekst, andre stammer, avanserte produksjonskjeder eller romfart ennå.
-- Big Bang-filmen er ikke produsert. Ingen endelig spillmotor eller visuell stil er valgt.
+## RTS-kontroller
+- Innbyggerne starter ledige. Klikk en person på kartet eller i listen for å velge.
+- Dra med venstre museknapp for å velge flere; Shift legger til/fjerner ved personklikk og legger til ved rammevalg. «Velg alle» velger hele stammen.
+- Med personer valgt: klikk på en ressurs for innsamling, eller ledig mark for flytting. Høyreklikk kan også gi ordre.
+- Elvekanten gir vann, bærbusker gir mat, trær gir ved, steinblokker gir stein. Den lilla kunnskapsplassen gir forskning.
+- Velg arbeidere, trykk på et bygg og klikk på ledig gress. Ressursene betales når byggeplassen opprettes. Arbeiderne går frem og bygger; flere arbeidere bygger raskere. Klikk på en uferdig byggeplass for å gjenoppta arbeidet.
+- «Stopp» avbryter valgte personers ordre. De blir ledige når en flytte- eller byggeordre er ferdig. Innsamling fortsetter til ny ordre gis.
+- Høyredra eller midtdra panorerer; rull zoomer. Mellomrom pauser og Escape avslutter byggemodus.
+- Lagre/last inn bruker lokal nettleserlagring. Versjon 0.2 har et nytt lagringsformat; gamle 0.1-lagringer importeres ikke eller overskrives.
 
-## Utvikling
-`node tests/simulation.cjs` tester simuleringsreglene uten avhengigheter.
+## Omfang og begrensninger
+Canvas 2D med midlertidig grafikk. Innbyggere går langs beregnede ruter og produserer først ved ankomst. Vann og bygg blokkerer ruter, mens vegetasjon kan passeres. Innbyggerne kan overlappe hverandre. Ressursene er foreløpig ubegrensede, og legges direkte i felles beholdning uten bæring til lager.
 
-For nettlesertest: `npm install --no-save playwright` og `npx playwright install chromium`, deretter `node tests/browser.cjs`. Testen skriver skjermbilder utenfor prosjektmappen. Se `docs/ROADMAP.md` for neste arbeid.
+Ett døgn er 120 simulerte sekunder; en sesong varer tre døgn. Felles helsetilstand og hendelsesbaserte rovdyr er enkle modeller. Klær, andre stammer, avanserte produksjonskjeder, epokesprang og romfart er ikke implementert. Filmsekvensen er ikke produsert.
+
+## Tester
+`node tests/simulation.cjs` tester idle-start, ordre, reisetid, bygging, kostnader, gjennomførbart oppdrag, tap og lagringsformat uten avhengigheter.
+
+Nettlesertest: installer Playwright og Chromium, kjør `node tests/browser.cjs`. Nettlesertesten er oppdatert, men kunne ikke kjøres i utviklingsmiljøet fordi Chromium ikke var tilgjengelig. Visuell QA gjenstår.
